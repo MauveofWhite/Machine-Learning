@@ -1,2 +1,2 @@
-# random-code
-Random code that I saw somewhere and play around.
+# Random code
+Useful and easy code snippets which we can see everywhere in our life.
