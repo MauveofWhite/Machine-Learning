@@ -1,3 +1,6 @@
+# @source: Siraj Raval
+# Used tensorflow 1.1.4
+
 import numpy as np
 from functools import partial
 import PIL.Image
