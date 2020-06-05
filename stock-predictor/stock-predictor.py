@@ -37,7 +37,7 @@ def predict_prices(dates, prices, x):
 
     return svr_rbf.predict([[x]])[0], svr_lin.predict([[x]])[0], svr_poly.predict([[x]])[0]
 
-get_data('stock-predictor/aapl.csv')
+get_data('../data/aapl.csv')
 
 value = input('Please enter a date: \n')
 predicted_price = predict_prices(dates, prices, value)
