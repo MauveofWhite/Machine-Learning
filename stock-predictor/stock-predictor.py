@@ -28,16 +28,16 @@ def predict_prices(dates, prices, x):
     plt.scatter(dates, prices, color='black', label='Data')
     plt.plot(dates, svr_rbf.predict(dates), color='red', label='RBF model')
     plt.plot(dates, svr_lin.predict(dates), color='green', label='Linear model')
-    plt.plot(dates, svr_poly.predict(dates), color='blie', label='Polynomial model')
+    plt.plot(dates, svr_poly.predict(dates), color='blue', label='Polynomial model')
     plt.xlabel('Date')
     plt.ylabel('Price')
     plt.title('Support Vector Regression')
     plt.legend()
     plt.show()
 
-    return svr_rbf.predict(x)[0], svr_lin.predict(x)[0], svr_poly.predict(x)[0]
+    return svr_rbf.predict([[x]])[0], svr_lin.predict([[x]])[0], svr_poly.predict([[x]])[0]
 
-get_data('aapl.csv')
+get_data('stock-predictor/aapl.csv')
 
 value = input('Please enter a date: \n')
 predicted_price = predict_prices(dates, prices, value)
