@@ -1,5 +1,7 @@
 # @source: Siraj Raval
 
+### Add additional layer (sentiment on Twitter) to predict future stock price. ###
+
 import tweepy
 import csv
 import numpy as np

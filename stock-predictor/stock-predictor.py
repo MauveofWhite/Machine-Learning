@@ -1,5 +1,7 @@
 # @source: Siraj Raval
 
+### Based on the historical price of a certain stock and use 3 different models to predict the future stock price. ###
+
 import csv
 import numpy as np
 from sklearn.svm import SVR

@@ -1,6 +1,8 @@
 # @source: Siraj Raval
 # Used tensorflow 1.1.4
 
+### Use tensorflow to transform an image with certain style. ###
+
 import numpy as np
 from functools import partial
 import PIL.Image
